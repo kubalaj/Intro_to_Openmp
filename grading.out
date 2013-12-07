@@ -1,0 +1,132 @@
+grading
+A_POINT 1: file exists
+ERROR: does not compile without openmp
+omp_bug1.c file exists
+B_POINTS 5: omp_bug1.c compiles with openmp
+omp_bug2.c file exists
+compiles with openmp
+ERROR: omp_bug2 does not give the correct results
+B_POINTS 5: omp_bug3
+omp_bug4.c file exists
+compiles with openmp
+B_POINTS 5: omp_bug4 correct result
+./mp ../data/matrix.500x ../data/matrix.500x output 
+ThreadID 0
+Total number task 1
+./mp ../data/matrix.500x ../data/matrix.500x output 
+ThreadID 0
+ThreadID 3
+Total number task 12
+ThreadID 8
+ThreadID 2
+ThreadID 9
+ThreadID 1
+ThreadID 10
+ThreadID 4
+ThreadID 6
+ThreadID 11
+ThreadID 7
+ThreadID 5
+accuracy:    3.82352993711e-09
+1 thread:    0.26858997345
+12 threads:  0.21942281723
+speedup:     1.22407494736
+accuracy
+C_POINTS:    5
+C_POINTS:    5    for speedup 1
+./mp ../data/matrix.1000x ../data/matrix.1000x output 
+ThreadID 0
+Total number task 1
+./mp ../data/matrix.1000x ../data/matrix.1000x output 
+ThreadID 0
+Total number task 12
+ThreadID 3
+ThreadID 2
+ThreadID 6
+ThreadID 4
+ThreadID 1
+ThreadID 5
+ThreadID 7
+ThreadID 8
+ThreadID 9
+ThreadID 10
+ThreadID 11
+accuracy:    3.28998908117e-08
+1 thread:    2.16774296761
+12 threads:  0.42316198349
+speedup:     5.12272617149
+accuracy
+C_POINTS:    5
+C_POINTS:    5    for speedup 1
+./mp ../data/matrix.1500x ../data/matrix.1500x output 
+ThreadID 0
+Total number task 1
+./mp ../data/matrix.1500x ../data/matrix.1500x output 
+ThreadID 0
+ThreadID 8
+Total number task 12
+ThreadID 3
+ThreadID 1
+ThreadID 6
+ThreadID 5
+ThreadID 4
+ThreadID 2
+ThreadID 9
+ThreadID 7
+ThreadID 10
+ThreadID 11
+accuracy:    1.487070449e-07
+1 thread:    9.96011090279
+12 threads:  1.24496412277
+speedup:     8.00031962416
+accuracy
+C_POINTS:    5
+C_POINTS:    5    for speedup 1
+./mp ../data/matrix.2000x ../data/matrix.2000x output 
+ThreadID 0
+Total number task 1
+./mp ../data/matrix.2000x ../data/matrix.2000x output 
+ThreadID 0
+Total number task 12
+ThreadID 1
+ThreadID 2
+ThreadID 4
+ThreadID 6
+ThreadID 3
+ThreadID 7
+ThreadID 8
+ThreadID 5
+ThreadID 9
+ThreadID 10
+ThreadID 11
+accuracy:    3.34742992436e-07
+1 thread:    25.3872230053
+12 threads:  3.24260687828
+speedup:     7.82926329286
+accuracy
+C_POINTS:    5
+C_POINTS:    5    for speedup 1
+./mp ../data/matrix.2500x ../data/matrix.2500x output 
+ThreadID 0
+Total number task 1
+./mp ../data/matrix.2500x ../data/matrix.2500x output 
+ThreadID 0
+Total number task 12
+ThreadID 1
+ThreadID 4
+ThreadID 6
+ThreadID 2
+ThreadID 3
+ThreadID 7
+ThreadID 11
+ThreadID 8
+ThreadID 9
+ThreadID 10
+ThreadID 5
+accuracy:    8.99961150935e-07
+1 thread:    44.7631530762
+12 threads:  4.46625089645
+speedup:     10.0225343614
+accuracy
+C_POINTS:    5
+C_POINTS:    5    for speedup 9
